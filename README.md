@@ -4,9 +4,9 @@ Java, Spring, Hibernate, PostgreSQL, Swagger.io, Angular, Angular Material, Dock
 
 ### Pre-requisite
 1. Docker, Maven, Node
-2. Run `docker-compose -f doceker-compose.yml up` to execute sql scripts
+2. Run `docker-compose -f docker-compose.yml up` to execute sql scripts
 3. Open psql on docker using command `docker exec -it postgres-node psql --u alona`
-4. Run the script from `contact-management/src/main/resources/db`. Start with `base.sql` then the specific ones
+4. Run the script from `contact-management/src/main/resources/db`. Start with `base.sql` then the specific ones to create the Database tables.
 
 ### Run #1 - Run directly on local
 1. Open terminal and go to the spring boot project `cd contact-management`
