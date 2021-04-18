@@ -37,20 +37,3 @@ Java, Spring, Hibernate, PostgreSQL, Swagger.io, Angular, Angular Material, Dock
 6. SwaggerAPI for API documentation
 7. Sorting in UI
 8. Api can be testing also using postman in `contact-management/src/main/resources/postman`, but there are some inconsistencies in the request body
-
-###Screenshot
-Entity Relation UML Diagram
-![Alt text](screenshots/Relationship.png?raw=true "Title")
-
-UI Listing
-![Alt text](screenshots/SS1.png?raw=true "Title")
-
-UI Create Dialog
-![Alt text](screenshots/SS2.png?raw=true "Title")
-
-UI View Dialog
-![Alt text](screenshots/SS3.png?raw=true "Title")
-
-UI Swagger
-![Alt text](screenshots/Swagger2.png?raw=true "Title")
-![Alt text](screenshots/Swagger.png?raw=true "Title")
