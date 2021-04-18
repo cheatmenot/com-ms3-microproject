@@ -39,6 +39,7 @@ Java, Spring, Hibernate, PostgreSQL, Swagger.io, Angular, Angular Material, Dock
 8. Api can be testing also using postman in `contact-management/src/main/resources/postman`, but there are some inconsistencies in the request body
 
 ### Screenshot
+
 Entity Relation UML Diagram
 ![Alt text](screenshots/Relationship.png?raw=true "Title")
 
