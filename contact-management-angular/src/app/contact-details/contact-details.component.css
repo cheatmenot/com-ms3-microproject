@@ -1,0 +1,23 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .padding-left-10 {
+    padding-left: 10px;
+  }
+  
+  .align-right {
+    float: right;
+  }
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
