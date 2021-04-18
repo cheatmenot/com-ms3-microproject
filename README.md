@@ -40,7 +40,7 @@ Java, Spring, Hibernate, PostgreSQL, Swagger.io, Angular, Angular Material, Dock
 
 ###Screenshot
 Entity Relation UML Diagram
-![Alt text](screenshots/Relationship UML.png?raw=true "Title")
+![Alt text](screenshots/Relationship.png?raw=true "Title")
 
 UI Listing
 ![Alt text](screenshots/SS1.png?raw=true "Title")
