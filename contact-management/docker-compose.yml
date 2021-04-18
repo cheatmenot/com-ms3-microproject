@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres:11.5
+    container_name: postgres-node
+    environment:
+      - POSTGRES_USER=alona
+      - POSTGRES_PASSWORD=djrumix
+      - POSTGRES_DB=alona
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  pgadmin4:
+    image: dpage/pgadmin4:4.13
+    container_name: pgadmin-node
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "docdocrumel@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "djrumix"
+    ports:
+      - "16543:80"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge

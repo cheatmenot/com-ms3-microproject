@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  spring-docker:
+    image: contact-management:latest
+    container_name: contact-management-node
+    ports:
+      - "1296:1296"
+    networks:
+      - contact-management_postgres
+  angular-docker:
+    image: contact-management-app:latest
+    container_name: contact-management-app-node
+#    build: ./contact-management-app
+    ports:
+      - '4200:80'
+    networks:
+      - contact-management_postgres
+
+networks:
+  contact-management_postgres:
+    external: true

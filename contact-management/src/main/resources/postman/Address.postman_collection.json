@@ -1,0 +1,205 @@
+{
+  "info": {
+    "_postman_id": "a88b28d5-406f-49b5-be83-4ace808118d9",
+    "name": "Address",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "delete Address",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:1296/address/delete?id=8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1296",
+          "path": [
+            "address",
+            "delete"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteSoft Address",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:1296/address/deleteSoft?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1296",
+          "path": [
+            "address",
+            "deleteSoft"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getAll Address",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:1296/address/getAll",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1296",
+          "path": [
+            "address",
+            "getAll"
+          ],
+          "query": [
+            {
+              "key": "Content-Ty",
+              "value": null,
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update Address",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"id\": 1,\n\t\"type\": \"type\",\n\t\"number\": \"number\",\n\t\"street\": \"street\",\n\t\"unit\": \"unit\",\n\t\"city\": \"city\",\n\t\"state\": \"state\",\n\t\"zipCode\": \"zipCode\",\n\t\"status\": \"INA\",\n\t\"modifiedBy\": \"rumel\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:1296/address/update",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1296",
+          "path": [
+            "address",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getId Address",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:1296/address/getId?id=8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1296",
+          "path": [
+            "address",
+            "getId"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create Address",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"id\": 1,\n\t\"type\": \"type\",\n\t\"number\": \"number\",\n\t\"street\": \"street\",\n\t\"unit\": \"unit\",\n\t\"city\": \"city\",\n\t\"state\": \"state\",\n\t\"zipCode\": \"zipCode\",\n\t\"createdBy\": \"alona\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:1296/address/create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1296",
+          "path": [
+            "address",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}

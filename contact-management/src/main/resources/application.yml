@@ -1,0 +1,32 @@
+
+server:
+  port: 1296
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    #comment this one if you want to use docker and uncomment the other one
+#    url: jdbc:postgresql://localhost:5432/alona?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC
+    #uncomment this one if you use docker
+    url: jdbc:postgresql://postgres:5432/alona?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC
+    username: alona
+    password: djrumix
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+springdoc:
+  show-actuator: true
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+  group-configs:
+    - group: CustomApis
+      paths-to-match: /**
+#    - group: users
+#      packages-to-scan: org.springdoc.demo.app2
